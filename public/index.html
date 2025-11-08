@@ -24,24 +24,24 @@
 
         h2 {
             text-align: center;
-            color: #333;
+            color: #50ed20;
             margin-bottom: 30px;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
-            color: #555;
+            margin-bottom: 10px;
+            color: #0a7de1;
         }
 
         input {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid #50ed20;
             border-radius: 5px;
             font-size: 16px;
             box-sizing: border-box;
@@ -92,6 +92,7 @@
 
         .hidden {
             display: none;
+
         }
     </style>
 </head>
@@ -103,12 +104,13 @@
             <h2>Iniciar Sesión</h2>
             <form id="loginFormElement">
                 <div class="form-group">
-                    <label for="loginEmail">Email:</label>
-                    <input type="email" id="loginEmail" required>
+                    <label for="loginEmail">Ingresa tu correo electrónico:</label>
+                    <input type="email" id="loginEmail" required placeholder="ejemplo@gmail.com">
+
                 </div>
                 <div class="form-group">
-                    <label for="loginPassword">Contraseña:</label>
-                    <input type="password" id="loginPassword" required>
+                    <label for="loginPassword">Ingresa tu Contraseña:</label>
+                    <input type="password" id="loginPassword" required placeholder="******">
                 </div>
                 <button type="submit">Iniciar Sesión</button>
                 <button type="button" class="switch-btn" onclick="showRegister()">Crear Cuenta</button>
@@ -121,18 +123,18 @@
             <h2>Crear Cuenta</h2>
             <form id="registerFormElement">
                 <div class="form-group">
-                    <label for="registerEmail">Email:</label>
-                    <input type="email" id="registerEmail" required>
+                    <label for="registerEmail">Ingresa tu correo electrónico:</label>
+                    <input type="email" id="registerEmail" required placeholder="ejemplo@gmail.com">
                 </div>
                 <div class="form-group">
-                    <label for="registerPassword">Contraseña:</label>
-                    <input type="password" id="registerPassword" required>
+                    <label for="registerPassword">Ingresa tu Contraseña:</label>
+                    <input type="password" id="registerPassword" required placeholder="******">
                 </div>
                 <div class="form-group">
                     <label for="confirmPassword">Confirmar Contraseña:</label>
-                    <input type="password" id="confirmPassword" required>
+                    <input type="password" id="confirmPassword" required placeholder="******">
                 </div>
-                <button type="submit">Crear Cuenta</button>
+                <button type="submit">Registrarme</button>
                 <button type="button" class="switch-btn" onclick="showLogin()">Ya tengo cuenta</button>
             </form>
             <div id="registerMessage"></div>
